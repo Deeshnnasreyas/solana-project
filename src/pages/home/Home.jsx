@@ -11,7 +11,6 @@ const Home = () => {
       <Hero />
       <BrandingLogo />
       <JoinCommunity />
-      {/* <MadeAdoption /> */}
       <SwipperCommunity />
       <Building />
     </div>
