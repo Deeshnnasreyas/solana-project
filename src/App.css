@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;800&family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+/* content scroll section */
+
+.scroll-filler {
+  height: 80vh;
+}
+
+.item {
+  position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05),
+    transparent 50px
+  );
+}
+
+.item::after {
+  content: "";
+  display: block;
+  height: 100vh;
+  margin-bottom: -100vh;
+}
+
+.item:last-of-type::after {
+  display: none;
+}
+
+.item:last-of-type {
+  margin-bottom: 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.05),
+      transparent 50px
+    ),
+    linear-gradient(to top, rgba(0, 0, 0, 0.05), transparent 50px);
+}
+
+.image-holder {
+  position: sticky;
+  top: 0;
+  float: left;
+  overflow: hidden;
+  width: 50%;
+  height: 100vh;
+}
+
+.image-holder .joint-community-left {
+  position: relative;
+  height: 600px;
+  width: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 130px 0;
+}
+.text-holder {
+  display: flex;
+  padding: 100px 0;
+  flex-direction: column;
+  width: 50%;
+  min-height: 120vh;
+  margin-left: 50%;
+}
+/* media */
+/* For small devices (max-width: 640px) */
+@media (max-width: 640px) {
+  .image-holder {
+    width: 100%;
+    float: none; /* Remove float for better layout */
+    padding-left: 10%;
+    margin-left: 0;
+  }
+  .text-holder {
+    padding-left: 10%;
+    margin-left: 0;
+  }
+}
+
+/* For medium devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .image-holder {
+    width: 100%;
+    float: none;
+    padding-left: 10%;
+    margin-left: 0;
+  }
+  .text-holder {
+    padding-left: 10%;
+    margin-left: 0;
+  }
+}
