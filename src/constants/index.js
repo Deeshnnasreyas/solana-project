@@ -16,16 +16,16 @@ export const menuLearnItems = [
   { value: "learn2", label: "Learn1" },
 ];
 export const menuBuildItems = [
-  { value: "learn1", label: "Build" },
-  { value: "learn2", label: "Learn2" },
+  { value: "build1", label: "Build" },
+  { value: "build2", label: "Buil1" },
 ];
 export const menuNetworkItems = [
-  { value: "learn1", label: "Network" },
-  { value: "learn2", label: "Learn2" },
+  { value: "nertwork1", label: "Network" },
+  { value: "nertwork2", label: "Network1" },
 ];
 export const menuCommunityItems = [
-  { value: "learn1", label: "Community" },
-  { value: "learn2", label: "Learn2" },
+  { value: "community1", label: "Community" },
+  { value: "community2", label: "Community1" },
 ];
 export const footerItems = [
   {
@@ -142,5 +142,73 @@ export const slides = [
       number: "48,000",
       text: "Developers building during Solana Hackathons",
     },
+  },
+];
+export const JoinCommunityStatus = [
+  { value: "11.5M+", label: "Active accounts" },
+  { value: "29.9M+", label: "NFTs minted" },
+  { value: "$0.0025", label: "Average cost per transaction" },
+];
+
+export const massAdoptionLeft = [
+  {
+    title: "FAST",
+    description:
+      "Don’t keep your users waiting. Solana has block times of 400 milliseconds — and as hardware gets faster, so will the network.",
+    statValue: "3,969",
+    statLabel: "Transactions per second",
+  },
+  {
+    title: "Scalable",
+    description:
+      "Get big, quick. Solana is made to handle thousands of transactions per second, and fees for both developers and users remain less than $0.01.",
+    statValue: "163,077,581,394",
+    statLabel: "Total transactions",
+  },
+];
+export const massAdoptionRight = [
+  {
+    title: "Decentralized",
+    description:
+      "The Solana network is validated by thousands of nodes that operate independently of each other, ensuring your data remains secure and censorship resistant.",
+    statValue: "1,675",
+    statLabel: "Validator nodes",
+  },
+  {
+    title: "Energy Efficient",
+    description:
+      "Solana’s proof of stake network and other innovations minimize its impact on the environment. Each Solana transaction uses about the same energy as a few Google searches.",
+    statValue: "0%",
+    statLabel: "Net carbon impact",
+  },
+];
+export const massAdoptionMob = [
+  {
+    title: "FAST",
+    description:
+      "Don’t keep your users waiting. Solana has block times of 400 milliseconds — and as hardware gets faster, so will the network.",
+    statValue: "3,969",
+    statLabel: "Transactions per second",
+  },
+  {
+    title: "Scalable",
+    description:
+      "Get big, quick. Solana is made to handle thousands of transactions per second, and fees for both developers and users remain less than $0.01.",
+    statValue: "163,077,581,394",
+    statLabel: "Total transactions",
+  },
+  {
+    title: "Decentralized",
+    description:
+      "The Solana network is validated by thousands of nodes that operate independently of each other, ensuring your data remains secure and censorship resistant.",
+    statValue: "1,675",
+    statLabel: "Validator nodes",
+  },
+  {
+    title: "Energy Efficient",
+    description:
+      "Solana’s proof of stake network and other innovations minimize its impact on the environment. Each Solana transaction uses about the same energy as a few Google searches.",
+    statValue: "0%",
+    statLabel: "Net carbon impact",
   },
 ];

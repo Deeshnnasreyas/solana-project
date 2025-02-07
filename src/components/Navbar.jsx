@@ -37,7 +37,8 @@ const Navbar = () => {
           <div className=" flex flex-row items-center cursor-pointer gap-2 text-white">
             <img
               src={logo}
-              className="mx-2 w-[10rem] md:w-[4rem] lg:w-[10rem]"
+              className="w-[148px] h-[22px] xl:w-[181.69px] xl:h[27px]"
+              // className="mx-2 w-[10rem] md:w-[4rem] lg:w-[10rem]"
               width={70}
               height={30}
               alt="Logo"
