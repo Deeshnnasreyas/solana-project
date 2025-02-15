@@ -9,6 +9,7 @@ import {
   menuNetworkItems,
 } from "../constants";
 import Dropdown from "./Dropdown";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -35,14 +36,16 @@ const Navbar = () => {
       <div className="container">
         <div className="flex flex-row justify-between pt-[13px] xl:pt-[20px]">
           <div className=" flex flex-row items-center cursor-pointer gap-2 text-white">
-            <img
-              src={logo}
-              className="w-[148px] h-[22px] xl:w-[181.69px] xl:h[27px]"
-              // className="mx-2 w-[10rem] md:w-[4rem] lg:w-[10rem]"
-              width={70}
-              height={30}
-              alt="Logo"
-            />
+            <Link to="/">
+              <img
+                src={logo}
+                className="w-[148px] h-[22px] xl:w-[181.69px] xl:h[27px]"
+                // className="mx-2 w-[10rem] md:w-[4rem] lg:w-[10rem]"
+                width={70}
+                height={30}
+                alt="Logo"
+              />
+            </Link>
           </div>
 
           <nav className="hidden md:flex flex-row items-center text-xl  font-lg gap-8">
@@ -60,7 +63,8 @@ const Navbar = () => {
         <div
           className={` ${
             menu ? "translate-x-0" : "-translate-x-full"
-          } lg:hidden flex flex-col absolute bg-[#000000] text-white left-0 top-16 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
+          } lg:hidden flex flex-col absolute bg-[#000000] text-white left-0 top-16 font-semibold text-2xl 
+          text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}
         >
           {renderDropdown()}
         </div>
